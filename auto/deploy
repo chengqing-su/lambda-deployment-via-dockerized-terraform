@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+"$(dirname "$0")"/compile
+
+"$(dirname "$0")"/terraform init
+"$(dirname "$0")"/terraform apply -auto-approve
